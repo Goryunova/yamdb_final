@@ -53,5 +53,5 @@ class IsAuthorAdminModeratorOrReadOnly(BasePermission):
         if request.method == 'POST':
             return request.user.is_authenticated
         return request.user.is_authenticated and (
-            request.user == obj.author or request.user.is_moderator
-            or request.user.is_admin)
+            request.user == obj.author or request.user.is_moderator or
+            request.user.is_admin)
