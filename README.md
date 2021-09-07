@@ -1,3 +1,5 @@
+![GitHub Workflow Status (event)](https://github.com/Goryunova/yamdb_final/actions/workflows.yamdb_workflow.yaml/badge.svg)
+
 # API_YamDB
 
 REST API для сервиса YaMDb — базы отзывов о фильмах, книгах и музыке.
