@@ -8,7 +8,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: marygor/yamdb_final_web:latest
+    image: marygor/yamdb_final:latest
     restart: always
     volumes:
       - static_value:/code/static/
