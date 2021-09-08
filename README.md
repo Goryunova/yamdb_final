@@ -1,4 +1,4 @@
-![GitHub Workflow Status (event)](https://github.com/Goryunova/yamdb_final/actions/workflows.yamdb_workflow.yaml/badge.svg)
+![GitHub Workflow Status (event)](https://github.com/Goryunova/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
 
 # API_YamDB
 
