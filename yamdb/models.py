@@ -71,7 +71,7 @@ class Title(models.Model):
         verbose_name_plural = 'Произведения'
 
 
-"""class GenreTitle(models.Model):
+class GenreTitle(models.Model):
     title = models.ForeignKey(
         Title,
         on_delete=models.SET_NULL,
@@ -81,7 +81,7 @@ class Title(models.Model):
         Genre,
         on_delete=models.SET_NULL,
         blank=True,
-        null=True)"""
+        null=True)
 
 
 class Review(models.Model):
@@ -105,7 +105,7 @@ class Review(models.Model):
             MinValueValidator(0, 'Минимальное значение: 0 баллов'),
             MaxValueValidator(10, 'Максимальное значение: 10 баллов'),
         ],
-        verbose_name='Оценка',
+        verbose_name='Текст отзыва',
     )
     pub_date = models.DateTimeField(
         auto_now_add=True,
@@ -132,7 +132,7 @@ class Comment(models.Model):
         related_name="reviews_comments",
         verbose_name='Отзыв',
     )
-    text = models.TextField(max_length=200, verbose_name='Текст комментария',)
+    text = models.TextField(max_length=200, verbose_name='Тукст комментария',)
     author = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
