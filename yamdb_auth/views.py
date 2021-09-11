@@ -62,4 +62,3 @@ def create_user_and_get_token(request):
 
         token = AccessToken.for_user(user=user)
         return Response({"token": str(token)}, status=status.HTTP_200_OK)
-    return None
